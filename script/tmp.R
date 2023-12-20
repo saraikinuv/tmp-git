@@ -16,3 +16,5 @@ library(data.table)
 
 COLS <- grep("sp", names(df))
 setDT(df)[, n := rowSums(.SD >= 2), .SDcols = COLS][]
+
+# что-то добавили
