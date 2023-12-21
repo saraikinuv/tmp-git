@@ -18,3 +18,19 @@ COLS <- grep("sp", names(df))
 setDT(df)[, n := rowSums(.SD >= 2), .SDcols = COLS][]
 
 # что-то добавили
+# cd code-user/ # Переходим в директорию code-user
+#   git status
+# git restore hexlet.txt
+# git restore --staged index.md index.html
+# git restore index.html
+# git clean -fd
+
+df <- data.frame(
+  A = c(1, 2, 3),
+  B = c("TEST", "YEAR", "TELL"),
+  C = c(TRUE, FALSE, TRUE))
+
+df
+
+df[1,]
+asplit(df, 1)
